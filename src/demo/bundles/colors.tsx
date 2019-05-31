@@ -7,7 +7,10 @@ type ColorState = {
 
 type ColorActions =
   | { type: "NEW:START"; payload: void }
-  | { type: "NEW:DONE"; payload: { selectedColor: string } };
+  | {
+      type: "NEW:DONE";
+      payload: { selectedColor: string };
+    };
 
 export default {
   // the name becomes the reducer name in the resulting state
